@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="../Image/Logo/logo-kinhdo-2022-1.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>KinhDo</title>
+    <link rel="stylesheet" href="../Css/GioiThieu/Layout.css">
+    <link rel="stylesheet" href="../Css/Font_6/Css/all.css">
+    <link rel="stylesheet" href="../Css/GioiThieu/Popup.css">
+    <link rel="stylesheet" href="../Css/ProductLayout/PrdLayout.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logobox"><img src="../Image/Logo/LogoKingDo.png"></div>
+        <div class="sidebox">
+              <div class="popup" id="popup-1">
+                <div class="overlay"></div>
+                <div class="content">
+                  <div class="close-btn" onclick="togglePopup()">&times;</div>
+
+                  <div class="wrapper">
+                    <form name="frmDangnhap" onsubmit="return Kiemtra();">
+                        <h1>Đăng nhập</h1>
+                        <div class="inputbox">
+                            <div class="form-group fullname">
+                            <input name="txtTen" id="txtTen" type="text" placeholder="Username">
+                            <i class="fa-solid fa-user"></i>
+                            </div>
+                        </div>
+                        <div class="inputbox">
+                            <input name="txtMatkhau" id="txtPassword" type="password" placeholder="Password" >
+                            <i class="fa-solid fa-lock"></i>
+                        </div>
+            
+                        <div class="RebFog">
+                            <label><input type="checkbox">Nhớ mật khẩu</label>
+                            <a href="#">Quên mật khẩu?</a>
+                        </div>
+            
+                        <button name="btnDangnhap" type="submit" class="btnsgn">Đăng nhập</button>
+            
+                        <!-- <div class="reg">
+                            <p>Don't have a account? 
+                              <button onclick="togglePopup2()">Sign Up</button></p>
+                        </div> -->
+                    </form>
+                </div>
+                </div>
+              </div>
+              
+              <button class="signin" onclick="togglePopup()">Đăng nhập</button>
+            &nbsp;&nbsp;&nbsp;
+              <div class="popup2" id="popup-2">
+                <div class="overlay"></div>
+                <div class="content">
+                  <div class="close-btn" onclick="togglePopup2()">&times;</div>
+
+                  <div class="wrapper">
+                    <form name="frmDangky" onsubmit="return Kiemtra2();"> 
+                        <h1>Đăng kí</h1>
+                        <div class="inputbox">
+                            <input name="txtTen2" id="txtTen2" type="text" placeholder="Tên người dùng" >
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="inputbox">
+                            <input name="txtPassword2" id="txtPassword2" type="password" placeholder="Mật khẩu" >
+                            <i class="fa-solid fa-lock"></i>
+                        </div>
+                        <div class="inputbox">
+                            <input name="txtDienthoai" id="txtDienthoai" type="tel" placeholder="Số điện thoại" >
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="inputbox">
+                            <input name="txtEmail" id="txtEmail" type="text" placeholder="Email" >
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="inputbox">
+                            <div class="select">
+                                <select name="City" id="City">
+                                    <option value="1">Chọn Thành phố</option>
+                                    <option value="2">TP.HCM</option>
+                                    <option value="3">Hà Nội</option>
+                                    <option value="4">Đà Nẵng</option>
+                                </select>
+                                <i class="fa-solid fa-city"></i>
+                            </div>   
+                        </div>
+                        <div class="rad">
+                            <input class="male" type="radio" name="gender" checked ><i class="fa-solid fa-mars"></i>
+                            
+                            <input class="female" type="radio" name="gender" ><i class="fa-solid fa-venus"></i>
+                        </div>
+                        <div class="inputbox">
+                            <input type="date" >
+                            <i class="fa-solid fa-calendar-days"></i>
+                        </div>
+            
+                        <fieldset>
+                            <label><input type="checkbox" checked>Bánh Trung Thu</label>
+                            <label><input type="checkbox">Bánh Bông Lan</label>
+                            <label><input type="checkbox">Bánh Bông Lan</label>
+                            <i class="fa-solid fa-heart"></i>
+                            </fieldset>
+                        
+                        <button type="submit" class="btnsgn">Đăng kí</button>
+                        <script src="../JavaScript/Popup.js"></script>
+                    </form>
+                </div>
+                </div>
+              </div>
+              
+              <button class="signup" onclick="togglePopup2()">Đăng kí</button>
+              
+        </div>
+
+        <!-- bang menu -->
+        <<nav class="sidebar">
+          <div class="navbar">
+            <i class="fa-solid fa-bars"></i>
+            <div class="nav-links">
+              <div class="sidebar-logo">
+                <i class="fa-solid fa-xmark"></i>
+              </div>
+              <ul class="links">
+                <li><a href="../Index.html">TRANG CHỦ</a></li>
+                <li><a href="../Pages/GioiThieu.html">GIỚI THIỆU</a></li>
+                <li>
+                  <a href="#">SẢN PHẨM</a>
+                  <i class="fa-solid fa-caret-down htmlcss-arrow arrow"></i>
+                  <ul class="htmlCss-sub-menu sub-menu">
+                    <li><a href="../Pages/SanPhamBlack&Gold.html">BLACK AND GOLD</a></li>
+                    <li class="more">
+                      <span> <a href="#">HỘP TRĂNG VÀNG</a>
+                      <i class="fa-solid fa-caret-right arrow more-arrow"></i>
+                    </span>
+                      <ul class="more-sub-menu sub-menu">
+                        <li><a href="../Pages/SanPhamHoangKim.html">HOÀNG KIM</a></li>
+                        <li><a href="../Pages/SanPhamHongNgoc.html">HỒNG NGỌC</a></li>
+                      </ul>
+                      <li><a href="../Pages/SanPhamQuaTet.html">HỘP QUÀ TẾT 2023</a></li>
+                    </li>
+                  </ul>
+                </li>
+                <!-- <li>
+                  <a href="#">BẢNG GIÁ</a>
+                  <i class="fa-solid fa-caret-down htmlcss-arrow arrow"></i>
+                  <ul class="js-sub-menu sub-menu">
+                    <li><a href="#">BÁNH TRĂNG VÀNG</a></li>
+                    <li><a href="#">BÁNH KINH ĐÔ NHƯ Ý</a></li>
+                    <li><a href="#">BÁNH LAVA TRỨNG CHẢY</a></li>
+                  </ul>
+                </li> -->
+                <li><a href="../Pages/LienHe.html">LIÊN HỆ</a></li>
+              </ul>
+            </div>
+            <!-- <div class="search-box">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <div class="input-box">
+                <input type="text" placeholder="Search...">
+              </div>
+            </div> -->
+          </div>
+        </nav>
+        <script src="../JavaScript/Menu3.js"></script>
+
+          <!-- landing page -->
+          <section class="sec">
+            <div class="content">
+                <div class="textbox">
+                    <h2>Kinh Đô là một thương hiệu thuộc <br>Công ty Cổ phần <span>Mondelez Kinh Đô Việt Nam.</span> </h2>
+                        Chuyên sản xuất và kinh doanh các mặt hàng bánh bông lan, bánh Trung Thu, bánh quy, bánh quế, snack…
+                </div>
+                <div class="imgbox">
+                    <img src="../Image/Product/landing page/20180811121940-picture-price2-3-300x317.png" class="kinhdo">
+                </div>
+            </div>
+            <ul class="thumb">
+                <li><img src="../Image/Product/landing page/20180811121940-picture-price2-3-300x317.png" 
+                    onclick="imgsilder('../Image/Product/landing page/20180811121940-picture-price2-3-300x317.png'); changebg('#228b22')"></li>
+                <li><img src="../Image/Product/landing page/20180811122847-picture-price-3-300x317.png" 
+                    onclick="imgsilder('/Image/Product/landing page/20180811122847-picture-price-3-300x317.png'); changebg('#deb887')"></li>
+                <li><img src="../Image/Product/landing page/20180811123200-picture-price-4-300x317.png" 
+                    onclick="imgsilder('../Image/Product/landing page/20180811123200-picture-price-4-300x317.png'); changebg('#cd5c5c')"></li>
+            </ul>
+            
+          </section>
+          <script src="../JavaScript/Landingpage.js"></script>
+          <div class="main">
+          <p>– Năm 1993 Công ty TNHH xây dựng và chế biến thực phẩm Kinh Đô được thành lập với vốn đầu tư là 1,4 tỉ VNĐ. <br>
+
+            – Ngày 01/10/2002, Công ty Kinh Đô chính thức chuyển thể từ Công ty TNHH Xây dựng và Chế Biến Thực Phẩm Kinh Đô sang hình thức Công ty Cổ Phần Kinh Đô. <br>
+            
+            – Vào tháng 7/2015, Tập Đoàn Mondelēz International của Mỹ mua lại 80% cổ phần mảng bánh kẹo Kinh Đô của Tập Đoàn Kinh Đô, công ty Mondelez Kinh Đô đã ra đời. <br>
+            
+            – Kế thừa và phát huy các thành quả của những người đi trước, Mondelez Kinh Đô tiếp tục cung cấp các sản phẩm bánh kẹo nổi tiếng đã gắn liền với tên tuổi của thương hiệu Kinh Đô và phát triển những sản phẩm mới để mang lại cho người tiêu dùng Việt những sản phẩm chất lượng, thơm ngon, an toàn, giá tốt. <br>
+            
+            – Hiện nay, bánh kẹo Kinh Đô đã được phân phối trên khắp 64 tỉnh thành với hơn 300 nhà phân phối, 200.000 điểm bán lẻ. <br>
+            
+            – Sản phẩm Kinh Đô đã được xuất khẩu đến hơn 30 nước trên thế giới, trong đó có Mỹ, Nhật Bản, Thái Lan, Hàn Quốc, Singapore… <br>
+
+            <h2>Chứng nhận chất lượng</h2>  <br>
+
+            – Sản phẩm và dây chuyền sản xuất của Kinh Đô được tổ chức BVQI của Anh Quốc chứng nhận hệ thống quản lý chất lượng đạt tiêu chuẩn quốc tế ISO 9002 : 2000. <br>
+
+            – Các sản phẩm được chứng nhận vệ sinh an toàn thực phẩm của Bộ Y Tế – Cục An toàn thực phẩm. <br>
+
+            – Ngoài ra, các nhà máy của Kinh Đô còn đạt các chứng nhận khác như ISO 22.000 : 2005, HACCP… <br>
+
+            – Kinh Đô đã 2 lần được nhà nước phong tặng Huân chương Lao Động, nhiều năm liền được người tiêu dùng bình chọn là hàng Việt Nam chất lượng cao. Thương hiệu duy nhất được 4 lần bình chọn là thương hiệu Quốc Gia… <br>
+
+            <h2>Vùng nguyên liệu</h2> <br>
+            <img src="../Image/Background/gioi-thieu-cong-ty-kinh-do-2_800x400.jpg" alt="">
+
+            – Công ty Kinh Đô có 4 nhà máy sản xuất thực phẩm, mỗi nhà máy sở hữu diện tích lớn lên đến hàng chục ngàn m2, khu nhà xưởng được đầu tư dây chuyền sản xuất với các công nghệ và thiết bị hiện đại giúp tạo nên một quy trình sản xuất khép kín, nghiêm ngặt, chuyên nghiệp, giúp tăng năng suất hiệu quả. <br>
+
+            – Các sản phẩm bánh kẹo được Kinh Đô nghiên cứu, tìm tòi, cố gắng nâng cao chất lượng sản phẩm cũ, sáng tạo và phát triển các sản phẩm mới, đáp ứng nhu cầu, thị hiếu đa dạng của người tiêu dùng.
+            </p>
+        </div>
+
+        <!-- footer  -->
+      <div class="footer">
+        <div class="box1 box">
+          <h3>ĐỊA CHỈ</h3>
+            <p>NHÀ PHÂN PHỐI BÁNH KINH ĐÔ</p>
+            <p>Địa Chỉ: 1/83 Đặng Thùy Trâm, Phường 13, Quận Bình Thạnh, TP.HCM</p>
+            <br>
+            <p>Hotline 1: 0919 838 786 - Zalo </p>
+            <p>Hotline 2: 0908 003 880 - Zalo</p>
+            <p>Hotline 3: 0933 556 383 - Zalo</p>
+            <p>Hotline 4: 0962 192 913 - Zalo</p>
+              <br>
+              <p>Email: banhkinhdo.net@gmail.com</p>
+              <p>Website: www.banhkinhdo.vn</p>
+        </div>
+        <div class="box2 box">
+          <h3>LIÊN KẾT NHANH</h3>
+            <p><a href="#">Giới thiệu Kinh Đô</a></p>
+            <p><a href="#">Phương thức thanh toán</a></p>
+            <p><a href="#">Chính sách bảo mật</a></p>
+            <p><a href="#">Chính sách đổi trả</a></p>
+            <p><a href="#">Phương thức vận chuyển</a></p>
+            <p><a href="#">Hướng dẫn đặt hàng</a></p>
+            <p><a href="#">Blog chia sẻ</a></p>
+        </div>
+        <div class="box3 box">
+          <h3>LIÊN HỆ</h3>
+          <div class="Name">
+            <input type="text" placeholder="Tên của bạn">
+          </div>
+          <div class="Email">
+            <input type="email" placeholder="Địa chỉ Email">
+          </div>
+          <div class="Mess">
+            <textarea id="message" rows="8" placeholder="Thông tin góp ý"></textarea>
+          </div>
+
+          <button type="submit" name="submit" value="SUBMIT">Gửi</button>
+        </div>
+      </div>  
+    </div>
+    
+    <a href="#" class="to-top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
+    <script src="../JavaScript/BackToTop.js"></script>
+
+</body>
+</html>
+</body>
+</html>

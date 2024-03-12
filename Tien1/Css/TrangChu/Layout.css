@@ -1,0 +1,519 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url(/Image/Background/chinese-new-year-illustration_53876-81892.jpg);
+    scroll-behavior: smooth;
+}
+.container{
+    border: 1px solid gray;
+    min-height: 200x;
+    display: grid;
+    grid-template-columns: 458px auto;
+    grid-template-areas: 
+    "logo side"
+    "menubox menubox"
+    "intro intro"
+    "main main"
+    "footer footer";
+}
+.logobox{
+    background-color: firebrick;
+    width: 458px;
+    height: 76px;
+    grid-area: logo;
+}
+.sidebox{
+    background-color: firebrick;
+    padding: 15px;
+    display: flex;
+    justify-content: right;
+    width: auto;
+    height: 76px;
+    grid-area: side;
+}
+.sidebox i{
+    margin-left: 10px;
+    font-size: 20px;
+    position: absolute;
+    right: 20px;
+}
+nav{
+    background-color: firebrick;
+    height: auto;
+    grid-area: menubox;
+}
+.intro{
+    height: fit-content;
+    display: flex;
+    margin-top: 15px;
+    justify-content: center;
+    background: transparent;
+    backdrop-filter: blur(2px);
+    grid-area: intro;
+}
+.main{
+  border-radius: 10px;
+  margin: 20px;
+  background: lightgray;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 100vh;
+  display: flex;
+  max-width: 1250px;
+  flex-wrap: wrap;
+  box-shadow: 5px 5px 10px black;
+  grid-area: main;
+}
+.footer{
+    min-height: 200px;
+    background-color: firebrick;
+    display: grid;
+    grid-area: footer;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.box{
+    padding: 20px 20px 50px 20px;
+    color: white;
+    
+}
+.box a{
+    text-decoration: none;
+    color: white;
+}
+.box p{
+    padding: 10px 0;
+}
+.box1{
+    min-height: 100px;
+    background: transparent;
+}
+.box2{
+    min-height: 100px;
+    background: transparent;
+}
+.box3{
+    min-height: 100px;
+    background: transparent;
+}
+
+.sidebox .btnsgp{
+    width: 50px;
+    height: 20px;
+    background: white;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 12px;
+    color: black;
+    font-weight: 600;
+}
+.sidebox .btnsgn{
+    width: 50px;
+    height: 20px;
+    background: white;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 12px;
+    color: black;
+    font-weight: 600;
+}
+.sidebox form {
+    position: relative;
+}
+.menubox li i{
+    font-size: 12px;
+}
+.box h3{
+    font-weight: 700;
+    font-size: 20px;
+}
+.Name input{
+    width: 100%;
+    height: 100%;
+    background: rgb(179, 97, 97);
+    backdrop-filter: blur(50px);
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    font-size: 16px;
+    color: white;
+    margin-top: 15px;
+    padding: 20px 45px 20px 20px;
+}
+.Email input{
+    width: 100%;
+    height: 100%;
+    background: rgb(179, 97, 97);
+    backdrop-filter: blur(50px);
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    font-size: 16px;
+    color: white;
+    margin-top: 15px;
+    padding: 20px 45px 20px 20px;
+}
+.Mess textarea{
+    width: 100%;
+    height: 150px;
+    background: rgb(179, 97, 97);
+    backdrop-filter: blur(50px);
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    font-size: 16px;
+    color: white;
+    margin-top: 15px;
+    padding: 20px 45px 20px 20px;
+}
+.box input::placeholder{
+    color: white;
+}
+.box textarea::placeholder{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+button{
+    width: 100px;
+    height: 40px;
+    background: darkcyan;
+    backdrop-filter: blur(50px);
+    border: none;
+    outline: none;
+    border: 2px solid gray;
+    border-radius: 40px;
+    font-size: 16px;
+    color: white;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+/* menu 3 */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  nav{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    height: 70px;
+    background: firebrick;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+  }
+  nav .navbar{
+    height: 100%;
+    max-width: 1250px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    padding: 0 50px;
+  }
+  nav .navbar .nav-links{
+    line-height: 70px;
+    height: 100%;
+  }
+  nav .navbar .links{
+    display: flex;
+  }
+  nav .navbar .links li{
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0 14px;
+  }
+  nav .navbar .links li a{
+    height: 100%;
+    text-decoration: none;
+    white-space: nowrap;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  
+  .links li:hover .htmlcss-arrow,
+  .links li:hover .js-arrow{
+    transform: rotate(180deg);
+    }
+  
+  nav .navbar .links li .arrow{
+    height: 100%;
+    width: 22px;
+    line-height: 70px;
+    text-align: center;
+    display: inline-block;
+    color: #fff;
+    transition: all 0.3s ease;
+  }
+  nav .navbar .links li .sub-menu{
+    position: absolute;
+    top: 70px;
+    left: 0;
+    line-height: 40px;
+    background: firebrick;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 4px 4px;
+    display: none;
+    z-index: 2;
+  }
+  nav .navbar .links li:hover .htmlCss-sub-menu,
+  nav .navbar .links li:hover .js-sub-menu{
+    display: block;
+  }
+  .navbar .links li .sub-menu li{
+    padding: 0 22px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+  .navbar .links li .sub-menu a{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .navbar .links li .sub-menu .more-arrow{
+    line-height: 40px;
+  }
+  .navbar .links li .htmlCss-more-sub-menu{
+    line-height: 40px;
+  }
+  .navbar .links li .sub-menu .more-sub-menu{
+    position: absolute;
+    top: 0;
+    left: 100%;
+    border-radius: 0 4px 4px 4px;
+    z-index: 1;
+    display: none;
+  }
+  .links li .sub-menu .more:hover .more-sub-menu{
+    display: block;
+  }
+  
+  .navbar .search-box{
+    position: relative;
+    height: 40px;
+    width: 40px;
+  }
+  .navbar .search-box i{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    line-height: 40px;
+    text-align: center;
+    font-size: 22px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .navbar .search-box .input-box{
+    position: absolute;
+    right: calc(100% - 40px);
+    top: 80px;
+    height: 60px;
+    width: 300px;
+    background: firebrick;
+    border-radius: 6px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s ease;
+  }
+  .navbar.showInput .search-box .input-box{
+    top: 65px;
+    opacity: 1;
+    pointer-events: auto;
+    background: firebrick;
+  }
+  .search-box .input-box::before{
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background: firebrick;
+    right: 10px;
+    top: -6px;
+    transform: rotate(45deg);
+  }
+  .search-box .input-box input{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 4px;
+    transform: translate(-50%, -50%);
+    height: 35px;
+    width: 280px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 16px;
+    border: none;
+  }
+  .navbar .nav-links .sidebar-logo{
+    display: none;
+  }
+  .navbar .fa-bars{
+    display: none;
+  }
+  @media (max-width:920px) {
+    nav .navbar{
+      max-width: 100%;
+      padding: 0 25px;
+    }
+  }
+  
+    @media (max-height:820px) {
+      nav .navbar{
+        position: fixed;
+      }
+    }
+  
+    nav .navbar .links li{
+      padding: 0 10px;
+      white-space: nowrap;
+    }
+    nav .navbar .links li a{
+      font-size: 15px;
+    }
+  
+  @media (max-width:800px){
+    nav{
+      position: relative;
+    }
+    .navbar .fa-bars{
+      display: block;
+    }
+    nav .navbar .nav-links{
+      position: fixed;
+      top: 0;
+      left: -100%;
+      overflow-y: scroll;
+      display: block;
+      max-width: 270px;
+      width: 100%;
+      background:  firebrick;
+      line-height: 40px;
+      padding: 20px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      transition: all 0.5s ease;
+      z-index: 1000;
+    }
+    .navbar .nav-links .sidebar-logo{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  
+      .sidebar-logo  i,
+      .navbar .fa-bars{
+        font-size: 25px;
+        color: #fff;
+      }
+    nav .navbar .links{
+      display: block;
+      margin-top: 20px;
+    }
+    nav .navbar .links li .arrow{
+      line-height: 40px;
+    }
+  nav .navbar .links li{
+      display: block;
+    }
+  nav .navbar .links li .sub-menu{
+    position: relative;
+    top: 0;
+    box-shadow: none;
+    display: none;
+  }
+  nav .navbar .links li .sub-menu li{
+    border-bottom: none;
+  
+  }
+  .navbar .links li .sub-menu .more-sub-menu{
+    display: none;
+    position: relative;
+    left: 0;
+  }
+  .navbar .links li .sub-menu .more-sub-menu li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .links li:hover .htmlcss-arrow,
+  .links li:hover .js-arrow{
+    transform: rotate(0deg);
+    }
+    .navbar .links li .sub-menu .more-sub-menu{
+      display: none;
+    }
+    .navbar .links li .sub-menu .more span{
+      display: flex;
+      align-items: center;
+    }
+  
+    .links li .sub-menu .more:hover .more-sub-menu{
+      display: none;
+    }
+    nav .navbar .links li:hover .htmlCss-sub-menu,
+    nav .navbar .links li:hover .js-sub-menu{
+      display: none;
+    }
+  .navbar .nav-links.show1 .links .htmlCss-sub-menu,
+    .navbar .nav-links.show3 .links .js-sub-menu,
+    .navbar .nav-links.show2 .links .more .more-sub-menu{
+        display: block;
+      }
+      .navbar .nav-links.show1 .links .htmlcss-arrow,
+      .navbar .nav-links.show3 .links .js-arrow{
+          transform: rotate(180deg);
+  }
+      .navbar .nav-links.show2 .links .more-arrow{
+        transform: rotate(90deg);
+      }
+  }
+  @media (max-width:370px){
+    nav .navbar .nav-links{
+    max-width: 100%;
+  } 
+  }
+
+  /* Back To Top */
+  html {
+    scroll-behavior: smooth;
+}
+
+.to-top{
+    background: white;
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: black;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+    box-shadow: 5px 5px 10px;
+}
+
+.to-top.active{
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+}

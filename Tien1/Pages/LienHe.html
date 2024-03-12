@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="../Image/Logo/logo-kinhdo-2022-1.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>KinhDo</title>
+    <link rel="stylesheet" href="../Css/GioiThieu/Layout.css">
+    <link rel="stylesheet" href="../Css/LienHe/LienHe.css">
+    <link rel="stylesheet" href="../Css/SanPham/SanPham.css">
+    <link rel="stylesheet" href="../Css/Font_6/Css/all.css">
+    <link rel="stylesheet" href="../Css/GioiThieu/Popup.css">
+    <link rel="stylesheet" href="../Css/ProductLayout/PrdLayout.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logobox"><img src="../Image/Logo/LogoKingDo.png"></div>
+        <div class="sidebox">
+              <div class="popup" id="popup-1">
+                <div class="overlay"></div>
+                <div class="content">
+                  <div class="close-btn" onclick="togglePopup()">&times;</div>
+
+                  <div class="wrapper">
+                    <form name="frmDangnhap" onsubmit="return Kiemtra();">
+                        <h1>Đăng nhập</h1>
+                        <div class="inputbox">
+                            <div class="form-group fullname">
+                            <input name="txtTen" id="txtTen" type="text" placeholder="Tên người dùng">
+                            <i class="fa-solid fa-user"></i>
+                            </div>
+                        </div>
+                        <div class="inputbox">
+                            <input name="txtMatkhau" id="txtPassword" type="password" placeholder="Mật khẩu" >
+                            <i class="fa-solid fa-lock"></i>
+                        </div>
+            
+                        <div class="RebFog">
+                            <label><input type="checkbox">Nhớ mật khẩu</label>
+                            <a href="#">Quên mật khẩu?</a>
+                        </div>
+            
+                        <button name="btnDangnhap" type="submit" class="btnsgn">Đăng nhập</button>
+            
+                        <!-- <div class="reg">
+                            <p>Don't have a account? 
+                              <button onclick="togglePopup2()">Sign Up</button></p>
+                        </div> -->
+                    </form>
+                </div>
+                </div>
+              </div>
+              
+              <button class="signin" onclick="togglePopup()">Đăng nhập</button>
+            &nbsp;&nbsp;&nbsp;
+              <div class="popup2" id="popup-2">
+                <div class="overlay"></div>
+                <div class="content">
+                  <div class="close-btn" onclick="togglePopup2()">&times;</div>
+
+                  <div class="wrapper">
+                    <form name="frmDangky" onsubmit="return Kiemtra2();"> 
+                        <h1>Đăng kí</h1>
+                        <div class="inputbox">
+                            <input name="txtTen2" id="txtTen2" type="text" placeholder="Tên người dùng" >
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="inputbox">
+                            <input name="txtPassword2" id="txtPassword2" type="password" placeholder="Mật khẩu" >
+                            <i class="fa-solid fa-lock"></i>
+                        </div>
+                        <div class="inputbox">
+                            <input name="txtDienthoai" id="txtDienthoai" type="tel" placeholder="Số điện thoại" >
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="inputbox">
+                            <input name="txtEmail" id="txtEmail" type="text" placeholder="Email" >
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="inputbox">
+                            <div class="select">
+                                <select name="City" id="City">
+                                    <option value="1">Chọn Thành phố</option>
+                                    <option value="2">TP.HCM</option>
+                                    <option value="3">Hà Nội</option>
+                                    <option value="4">Đà Nẵng</option>
+                                </select>
+                                <i class="fa-solid fa-city"></i>
+                            </div>   
+                        </div>
+                        <div class="rad">
+                            <input class="male" type="radio" name="gender" checked ><i class="fa-solid fa-mars"></i>
+                            
+                            <input class="female" type="radio" name="gender" ><i class="fa-solid fa-venus"></i>
+                        </div>
+                        <div class="inputbox">
+                            <input type="date" >
+                            <i class="fa-solid fa-calendar-days"></i>
+                        </div>
+            
+                        <fieldset>
+                            <label><input type="checkbox" checked>Bánh Trung Thu</label>
+                            <label><input type="checkbox">Bánh Bông Lan</label>
+                            <label><input type="checkbox">Bánh Bông Lan</label>
+                            <i class="fa-solid fa-heart"></i>
+                            </fieldset>
+                        
+                        <button type="submit" class="btnsgn">Đăng kí</button>
+                        <script src="../JavaScript/Popup.js"></script>
+                    </form>
+                </div>
+                </div>
+              </div>
+              
+              <button class="signup" onclick="togglePopup2()">Đăng kí</button>
+              
+        </div>
+
+        <!-- bang menu -->
+        <nav class="sidebar">
+          <div class="navbar">
+            <i class="fa-solid fa-bars"></i>
+            <div class="nav-links">
+              <div class="sidebar-logo">
+                <i class="fa-solid fa-xmark"></i>
+              </div>
+              <ul class="links">
+                <li><a href="../Index.html">TRANG CHỦ</a></li>
+                <li><a href="../Pages/GioiThieu.html">GIỚI THIỆU</a></li>
+                <li>
+                  <a href="#">SẢN PHẨM</a>
+                  <i class="fa-solid fa-caret-down htmlcss-arrow arrow"></i>
+                  <ul class="htmlCss-sub-menu sub-menu">
+                    <li><a href="../Pages/SanPhamBlack&Gold.html">BLACK AND GOLD</a></li>
+                    <li class="more">
+                      <span> <a href="#">HỘP TRĂNG VÀNG</a>
+                      <i class="fa-solid fa-caret-right arrow more-arrow"></i>
+                    </span>
+                      <ul class="more-sub-menu sub-menu">
+                        <li><a href="../Pages/SanPhamHoangKim.html">HOÀNG KIM</a></li>
+                        <li><a href="../Pages/SanPhamHongNgoc.html">HỒNG NGỌC</a></li>
+                      </ul>
+                      <li><a href="../Pages/SanPhamQuaTet.html">HỘP QUÀ TẾT 2023</a></li>
+                    </li>
+                  </ul>
+                </li>
+                <!-- <li>
+                  <a href="#">BẢNG GIÁ</a>
+                  <i class="fa-solid fa-caret-down htmlcss-arrow arrow"></i>
+                  <ul class="js-sub-menu sub-menu">
+                    <li><a href="#">BÁNH TRĂNG VÀNG</a></li>
+                    <li><a href="#">BÁNH KINH ĐÔ NHƯ Ý</a></li>
+                    <li><a href="#">BÁNH LAVA TRỨNG CHẢY</a></li>
+                  </ul>
+                </li> -->
+                <li><a href="../Pages/LienHe.html">LIÊN HỆ</a></li>
+              </ul>
+            </div>
+            <!-- <div class="search-box">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <div class="input-box">
+                <input type="text" placeholder="Search...">
+              </div>
+            </div> -->
+          </div>
+        </nav>
+        <script src="../JavaScript/Menu3.js"></script>
+
+        <div class="main">
+         <article>
+            <p>NHÀ PHÂN PHỐI BÁNH KINH ĐÔ</p>   
+
+            <p>Địa Chỉ: 1/83 Đặng Thùy Trâm, Phường 13, Quận Bình Thạnh, TP.HCM</p>    
+            <p>Hotline 1: 0919 838 786 – Zalo</p>    
+            <p> Hotline 2: 0908 003 880 – Zalo</p>   
+            <p>Hotline 3: 0933 556 383 – Zalo</p>    
+            <p>Hotline 4: 0962 192 913 – Zalo</p>    
+            <p>Email: banhkinhdo.net@gmail.com</p>    
+            <p>Website: www.banhkinhdo.vn</p>    
+         </article>
+         
+         <div class="boxlh">
+            <h3>LIÊN HỆ</h3>
+            <div class="Name boxlh">
+                <p>Your Name</p>
+              <input type="text">
+            </div>
+            <div class="Email boxlh">
+                <p>Your Email</p>
+              <input type="email">
+            </div>
+            <div class="Mess boxlh">
+                <p>Your Message</p>
+              <textarea id="message" rows="8"></textarea>
+            </div>
+  
+            <button type="submit" name="submit" value="SUBMIT">SUBMIT</button>
+          </div>
+        </div>
+
+        <!-- footer  -->
+      <div class="footer">
+        <div class="box1 box">
+          <h3>ĐỊA CHỈ</h3>
+            <p>NHÀ PHÂN PHỐI BÁNH KINH ĐÔ</p>
+            <p>Địa Chỉ: 1/83 Đặng Thùy Trâm, Phường 13, Quận Bình Thạnh, TP.HCM</p>
+            <br>
+            <p>Hotline 1: 0919 838 786 - Zalo </p>
+            <p>Hotline 2: 0908 003 880 - Zalo</p>
+            <p>Hotline 3: 0933 556 383 - Zalo</p>
+            <p>Hotline 4: 0962 192 913 - Zalo</p>
+              <br>
+              <p>Email: banhkinhdo.net@gmail.com</p>
+              <p>Website: www.banhkinhdo.vn</p>
+        </div>
+        <div class="box2 box">
+          <h3>LIÊN KẾT NHANH</h3>
+            <p><a href="#">Giới thiệu Kinh Đô</a></p>
+            <p><a href="#">Phương thức thanh toán</a></p>
+            <p><a href="#">Chính sách bảo mật</a></p>
+            <p><a href="#">Chính sách đổi trả</a></p>
+            <p><a href="#">Phương thức vận chuyển</a></p>
+            <p><a href="#">Hướng dẫn đặt hàng</a></p>
+            <p><a href="#">Blog chia sẻ</a></p>
+        </div>
+        <div class="box3 box">
+          <h3>LIÊN HỆ</h3>
+          <div class="Name">
+            <input type="text" placeholder="Tên của bạn">
+          </div>
+          <div class="Email">
+            <input type="email" placeholder="Địa chỉ Email">
+          </div>
+          <div class="Mess">
+            <textarea id="message" rows="8" placeholder="Thông tin góp ý"></textarea>
+          </div>
+
+          <button type="submit" name="submit" value="SUBMIT">Gửi</button>
+        </div>
+      </div>  
+    </div>
+    
+    <a href="#" class="to-top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
+    <script src="../JavaScript/BackToTop.js"></script>
+
+</body>
+</html>
+</body>
+</html>

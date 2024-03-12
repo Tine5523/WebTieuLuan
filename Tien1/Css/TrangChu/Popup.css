@@ -1,0 +1,301 @@
+/* pop up 1 */
+.popup .overlay {
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100vw;
+    height:100vh;
+    background:rgba(0,0,0,0.7);
+    z-index:11;
+    display:none;
+  }
+  
+  .popup .content {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%) scale(0);
+    background:firebrick;
+    z-index:12;
+    text-align:center;
+    padding:20px;
+    box-sizing:border-box;
+    font-family:"Open Sans",sans-serif;
+  }
+  
+  .popup .close-btn {
+    cursor:pointer;
+    position:absolute;
+    right:20px;
+    top:20px;
+    width:30px;
+    height:30px;
+    background:#222;
+    color:#fff;
+    font-size:25px;
+    font-weight:600;
+    line-height:30px;
+    text-align:center;
+    border-radius:50%;
+    z-index:12;
+  }
+  
+  .popup.active .overlay {
+    display:block;
+  }
+  
+  .popup.active .content {
+    transition:all 300ms ease-in-out;
+    transform:translate(-50%,-50%) scale(1);
+  }
+  
+  .sidebox button {
+    color:#222;
+    text-transform:uppercase;
+    font-weight:600;
+    background:#fff;
+
+    /* pop up 2 */
+  }
+  .popup2 .overlay {
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100vw;
+    height:100vh;
+    background:rgba(0,0,0,0.7);
+    z-index:11;
+    display:none;
+  }
+  
+  .popup2 .content {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%) scale(0);
+    background:firebrick;
+    z-index:12;
+    text-align:center;
+    padding:20px;
+    box-sizing:border-box;
+    font-family:"Open Sans",sans-serif;
+  }
+  
+  .popup2 .close-btn {
+    cursor:pointer;
+    position:absolute;
+    right:20px;
+    top:20px;
+    width:30px;
+    height:30px;
+    background:#222;
+    color:#fff;
+    font-size:25px;
+    font-weight:600;
+    line-height:30px;
+    text-align:center;
+    border-radius:50%;
+    z-index:12;
+  }
+  
+  .popup2.active .overlay {
+    display:block;
+  }
+  
+  .popup2.active .content {
+    transition:all 300ms ease-in-out;
+    transform:translate(-50%,-50%) scale(1);
+  }
+  
+  .sidebox button {
+    color:#222;
+    text-transform:uppercase;
+    font-weight:600;
+    background:#fff;
+  }
+  /* Sign in */
+.content{
+  width: 420px;
+  background: firebrick;
+  color: white;
+  border-radius: 10px;
+  padding: 30px;
+}
+.content h1 {
+  font-size: 36px;
+  text-align: center;
+}
+.content .inputbox{
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+.inputbox input{
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid gray;
+  border-radius: 40px;
+  font-size: 16px;
+  color: white;
+  padding: 20px 45px 20px 20px;
+}
+.inputbox input::placeholder{
+  color: white;
+}
+.inputbox i {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+  
+.content .RebFog{
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0 15px;
+}
+.RebFog label input{
+  accent-color: white;
+  margin-right: 3px;
+}
+.RebFog a {
+  color: white;
+  text-decoration: none;
+}
+.RebFog a:hover{
+  text-decoration: underline;
+}
+.content .btnsgn{
+  width: 100%;
+  height: 45px;
+  background: white;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 16px;
+  color: black;
+  font-weight: 600;
+}
+.content .reg{
+  font-size: 14.5px;
+  text-align: center;
+  margin-top: 20px;
+  margin: 20px 0 15px;
+}
+.reg p a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+.reg p a:hover{
+  text-decoration: underline;
+}
+
+/* sign up */
+.content{
+  width: 420px;
+  background: firebrick;
+  color: white;
+  border-radius: 10px;
+  padding: 30px;
+}
+.content h1 {
+  font-size: 36px;
+  text-align: center;
+}
+.content .inputbox{
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+.inputbox input{
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid gray;
+  border-radius: 40px;
+  font-size: 16px;
+  color: white;
+  padding: 20px 45px 20px 20px;
+}
+.inputbox input::placeholder{
+  color: white;
+}
+.inputbox i {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+  
+fieldset{
+  position: relative;
+  border: 2px solid gray;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  margin: 15px 0 25px;
+  padding: 10px 45px 10px 20px;
+}
+fieldset i{
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+.rad input{
+  height: 20px;
+  width: 20px;
+  padding: 20px 45px 20px 20px;
+}
+.rad i{
+  margin: 10px;
+  font-size: 20px;
+}
+.rad input.female{
+  margin-left: 100px;
+}
+.rad input.male{
+  margin-left: 20px;
+}
+
+.content .btnsgn{
+  width: 100%;
+  height: 45px;
+  background: white;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 16px;
+  color: black;
+  font-weight: 600;
+}
+
+select{
+  position: relative;
+  width: 100%;
+  height: 50px;
+  border: 2px solid gray;
+  border-radius: 40px;
+  background: firebrick;
+  color: white;
+  padding-left: 20px;
+  font-size: 16px;
+}
+.select select{
+  appearance: none;
+}
